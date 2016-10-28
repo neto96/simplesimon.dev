@@ -5,7 +5,7 @@ var score = 0;
 		var sigils = $('.buttonset');
 		var startB = $('button');
 
-		
+		//
 		sigils.click(function() {
 			if (level == 0) {
 				startB.animate({
@@ -39,7 +39,7 @@ var score = 0;
 				$(this).css('opacity', '1')
 			},
 			function() {
-				$(this).css('opacity', '.75')
+				$(this).css('opacity', '.25')
 			}
 		);
 		
@@ -49,7 +49,7 @@ var score = 0;
 					$('[data-id="' + randomSeq[i] + '"]').animate({
 						'opacity': '1'
 					}, 750).animate({
-						'opacity': '.75'
+						'opacity': '.25'
 					}, 10);
 					i++;
 					if (i == randomSeq.length) {
